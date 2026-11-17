@@ -2,8 +2,7 @@ name: Build Mini Duck Browser APK
 on:
   workflow_dispatch:
   push:
-    paths:
-      - '.github/workflows/build-apk.yml'
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
